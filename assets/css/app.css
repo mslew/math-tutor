@@ -1,0 +1,148 @@
+body {
+  background: #333
+}
+
+.title{
+  text-align: center;
+  padding-left: 12rem;
+}
+
+.flexBox {
+  align-items: center;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  width: 100%;
+}
+
+.mathCard {
+  background: white;
+  border-radius: 0.25rem;
+  padding:8rem;
+  display: inline-block;
+}
+
+.scores{
+  position: absolute;
+  text-align: right;
+  color: white;
+  top: 0;
+  right: 0;
+  margin-right: 5em;
+  margin-top: 1em;
+  float: right;
+  font-size: 1.25em;
+}
+
+.levelsMenu {  
+    text-align: center;
+    list-style-type: none;
+    width: 200px;
+}
+
+.levelsMenu a {
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.l10{
+  background-color: #3761d8;
+}
+
+.l9{
+  background-color: #3761d8;
+}
+
+.l8{
+  background-color: #3761d8;
+}
+
+.l7{
+  background-color: #3761d8;
+}
+
+.l6{
+  background-color: #3761d8;
+}
+
+.l5{
+  background-color: #3761d8;
+}
+
+.l4{
+  background-color: #3761d8;
+}
+
+.l3{
+  background-color: #3761d8;
+}
+
+.l2{
+  background-color: #3761d8;
+}
+
+.l1{
+  background-color: #3761d8;
+}
+
+.questionText {
+  padding-bottom: 6rem
+}
+
+.svg {
+  height: 24px;
+  width: 24px;
+}
+
+.incorrectCorrect {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: #34a853;
+  font-size: 2.5rem
+}
+
+.lives{
+  display: flex;
+  justify-content: center;
+  padding: 2em;
+}
+.heart1 {
+  size: 200px;
+  border: 2px solid #555;
+  padding: 1em;
+  margin-left: 2em;
+}
+.heart2 {
+  size: 200px;
+  border: 2px solid #555;
+  padding: 1em;
+  margin-left: 2em;
+}
+.heart3 {
+  size: 200px;
+  border: 2px solid #555;
+  padding: 1em;
+  margin-left: 2em;
+}
+.resetHelpButtons{
+  display: flex;
+  justify-content: center;
+  padding: 2em;
+}
+
+.resetButton {
+  size: 200px;
+  border: 2px solid #555;
+  padding: 1em;
+  margin-right: 2em;
+}
+
+.helpButton {
+  size: 200px;
+  border: 2px solid #555;
+  padding: 1em;
+  margin-left: 2em;
+}

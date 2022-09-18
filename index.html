@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./assets/css/app.css" />
+  <title>Math Tutor</title>
+</head>
+
+<body onload="startGame()">
+
+<h1 class="title" style="color:white;">Math Tutor</h1>
+<div class="container">
+  <div class="flexBox" id = "box">
+    <ul class ="levelsMenu" id = lMenu>
+        <li class="l10" id="10"> <a href="#">Level 10</a></li>
+        <li class="l9" id="9"><a href="#">Level 9</a></li>
+        <li class="l8" id="8"><a href="#">Level 8</a></li>
+        <li class="l7" id="7"><a href="#">Level 7</a></li>
+        <li class="l6" id="6"><a href="#">Level 6</a></li>
+        <li class="l5" id="5"><a href="#">Level 5</a></li>
+        <li class="l4" id="4"><a href="#">Level 4</a></li>
+        <li class="l3" id="3"><a href="#">Level 3</a></li>
+        <li class="l2" id="2"><a href="#">Level 2</a></li>
+        <li class="l1" id="1"><a href="#">Level 1</a></li>
+        </ul>
+    <div class="mathCard">
+      <h1 class="incorrectCorrect" id="verdict"></h1>
+      <div class="scores">
+        <p class = "highScore" id ="highScore">High Score: 0</p>
+        <p class = "currentScore" id ="currentScore">Current Score: 0</p>
+      </div>
+      <div class = "lives">
+        <img class = "w3-round" id = "heart1" width = "35" height = "35" src = "./assets/img/heart.jpg"/>
+        <img class = "w3-round" id = "heart2" width = "35" height = "35" src = "./assets/img/heart.jpg"/>
+        <img class = "w3-round" id = "heart3" width = "35" height = "35" src = "./assets/img/heart.jpg"/>
+
+      </div>
+      <div class="mathQuestion">
+      <h2 class="display-4 questionText text-center mb-0" id="equationText">T</h2>
+        
+      </div>
+        <form id="mathForm">
+            <input type="text" class="form-control" id="answerInput" placeholder="Type your answer here" autocomplete="off">
+            <button type="submit" class="btn btn-outline-primary w-100" >Submit</button>
+        </form>
+        <div class="resetHelpButtons">
+          <button class="resetButton" onclick="resetGame()">
+            <img class="resetImage" id="resetButton" width="35" height="35" src="./assets/img/refresh.svg"/></button>
+          <button class="helpButton" onclick="help()">
+            <img class="helpImage" id="helpButton" width="35" height="35" src="./assets/img/answer.svg"/></button>
+        </div>
+      <div class = "gScreen" id = "gameover-screen" style = "display:none">
+      <h3>Game Over</h3>
+      <button onclick = "startGame()">Start Game</button>
+    </div>
+    </div>
+  </div>
+</div>
+  <!-- JavaScript file -->
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
